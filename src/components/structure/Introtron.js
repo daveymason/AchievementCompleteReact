@@ -1,7 +1,7 @@
 import React from 'react';
-import { Jumbotron, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 
-const Intro = (props) => {
+const Intro = () => {
   return (
     <div class="row headerBg align-items-end">
         <Container fluid>
