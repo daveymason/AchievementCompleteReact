@@ -3,8 +3,9 @@ import { Container } from "reactstrap";
 
 const JumbotronAG = () => {
   return (
+    <div className="jumbotron bg-cover text-white midBg md-0">
       <Container fluid>
-        <div className="jumbotron bg-cover text-white midBg md-0">
+        
           <div className="py-5 col-lg-5 col-12 text-right ml-auto mr-5 blackOverlay">
             <h2 className="display-4 font-weight-bold blueText">
               Achieve Your Goals
@@ -22,8 +23,9 @@ const JumbotronAG = () => {
               Sign Up Now <i className="fa fa-hand-pointer"></i>
             </a>
           </div>
-        </div>
+        
       </Container>
+      </div>
   );
 };
 
