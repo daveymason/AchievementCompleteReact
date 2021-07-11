@@ -171,7 +171,7 @@ footer {
     background-image: url('../img/headerBg.jpg');
     background-attachment: fixed;
     background-size: cover; 
-    background-color: blue;
+    background-color: #0d0164;
   }
   
   .jumbotronBg {
@@ -185,7 +185,7 @@ footer {
       background-attachment: fixed;
       background-size: cover;
       color: white; 
-      background-color: blue; }
+      background-color: #0d0164; }
   
   .midBg {
     background: url("../img/midBg.jpg");
@@ -201,7 +201,7 @@ footer {
     background: url("../img/contactBg.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-color: blue; }
+    background-color: #0d0164; }
 
   .clientOne {
     background: url("../img/client1.png");
