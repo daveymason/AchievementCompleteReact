@@ -11,6 +11,7 @@ const Intro = () => {
                 </h1>
                 <p class="font-italic">Stop procrastinating and get it done with the newest productivity app to guide you!</p>
                 <p>Coming soon for Android and iOS</p>
+                
                 <a class="btn btn-primary btn-lg animateInLeft" href="#about" role="button">Learn
                   more <i class="fa fa-angle-right"></i>
                 </a>

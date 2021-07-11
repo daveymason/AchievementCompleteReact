@@ -1,5 +1,5 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.css'; //This is wrong import from bootstrap
-import Navbar from './components/structure/Navbar';
+import Navbar from './components/structure/Navbar/Navbar';
 import Introtron from './components/structure/Introtron';
 import Quotebox from './components/structure/Quotebox';
 import JumbotronIA from './components/structure/JumbotronIA';

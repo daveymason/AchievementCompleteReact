@@ -9,6 +9,7 @@ import {
   NavLink,
   Container,
 } from "reactstrap";
+import './Navbar.css'
 
 const DaveysNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ const DaveysNav = (props) => {
       >
         <NavbarBrand>
           <img
-            src="./img/logo.png"
+            src=".././img/logo.png"
             width="70"
             alt=""
             className="d-inline-block align-middle mr-2"
@@ -55,26 +56,26 @@ const DaveysNav = (props) => {
           <Nav className="navbar-nav ml-auto">
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#">
-                <i className="fa fa-home fa-lg"></i>
-                Home
+                <i className="fa fa-home fa-lg"> Home</i>
+                
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#about">
-                <i className="fa fa-question-circle fa-lg"></i>
-                About
+                <i className="fa fa-question-circle fa-lg"> About</i>
+                
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#features">
-                <i className="fa fa-clipboard-list fa-lg"></i>
-                Features
+                <i className="fa fa-clipboard-list fa-lg"> Features</i>
+                
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#contact">
-                <i className="fa fa-envelope fa-lg"></i>
-                Contact
+                <i className="fa fa-envelope fa-lg"> Contact</i>
+                
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
@@ -87,8 +88,8 @@ const DaveysNav = (props) => {
                 data-html="true"
                 title="Android or iPhone"
               >
-                <i className="fa fa-download fa-lg"></i>
-                Download
+                <i className="fa fa-download fa-lg"> Download</i>
+                
               </NavLink>
             </NavItem>
           </Nav>
