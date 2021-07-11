@@ -39,7 +39,7 @@ const DaveysNav = (props) => {
       >
         <NavbarBrand>
           <img
-            src="../assets/img/logo.png"
+            src="https://daveymason.com/assets/external/images/logo.png"
             width="70"
             alt=""
             className="d-inline-block align-middle mr-2"

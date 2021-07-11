@@ -15,7 +15,7 @@ export default class Testimonials extends Component {
         interval={6100}
       >
         <div> 
-        <img src="https://achievementcomplete.com/assets/img/client1.png" alt="" />
+        <img src="https://daveymason.com/assets/external/images/client1.png" alt="" />
           <div className="myCarousel">
             <h4>Developer</h4>
             <p>
@@ -27,7 +27,7 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src="https://achievementcomplete.com/assets/img/client2.png" alt="" />
+          <img src="https://daveymason.com/assets/external/images/client2.png" alt="" />
           <div className="myCarousel">
             
             <h4>UX Designer</h4>
@@ -41,7 +41,7 @@ export default class Testimonials extends Component {
         </div>
 
         <div>
-          <img src="https://achievementcomplete.com/assets/img/client3.png" alt="" />
+          <img src="https://daveymason.com/assets/external/images/client3.png" alt="" />
           <div className="myCarousel">
             <h4>Entrepreneur</h4>
             <p>

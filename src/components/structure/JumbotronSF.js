@@ -63,7 +63,7 @@ const JumbotronSF = () => {
 
         <div class="col-xs-12 col-lg-6 text-center ml-auto">
           <img
-            src="img/stayFocused.jpg"
+            src="https://daveymason.com/assets/external/images/stayFocused.jpg"
             class="d-none d-xl-block img-fluid img-rounded"
             alt="Stay Focused"
           />
