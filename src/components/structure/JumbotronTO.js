@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import { Container } from "reactstrap";
+import { Container, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import SignUpForm from "./SignUpForm";
 
 const JumbotronTO = () => {
   const [modal, setModal] = useState(false);
@@ -30,25 +30,8 @@ const JumbotronTO = () => {
         <Modal isOpen={modal} toggle={togglePopup}>
           <ModalHeader toggle={togglePopup}>Sign Up Now</ModalHeader>
           <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            <SignUpForm />
           </ModalBody>
-          <ModalFooter>
-            <Button
-              className="btn btn-primary px-5 btn-md"
-              onClick={togglePopup}
-            >
-              Submit
-            </Button>
-            <Button
-              className="btn btn-secondary px-5 btn-md"
-              onClick={togglePopup}
-            >
-              Cancel
-            </Button>
-          </ModalFooter>
         </Modal>
       </Container>
     </div>

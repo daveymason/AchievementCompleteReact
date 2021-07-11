@@ -17,6 +17,7 @@ const DaveysNav = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
+    
     <Container fluid>
       <link
         rel="stylesheet"
@@ -31,14 +32,14 @@ const DaveysNav = (props) => {
       />
 
       <link rel="icon" href="/favicon.ico" />
-
+      <div class="blackOverlay">
       <Navbar
         id="dm-sticky-nav"
-        className="navbar navbar-dark navbar-expand-lg fixed-top dm-transparent-nav"
+        className="navbar navbar-dark navbar-expand-lg fixed-top dm-transparent-nav blueOverlay"
       >
         <NavbarBrand>
           <img
-            src=".././img/logo.png"
+            src="../assets/img/logo.png"
             width="70"
             alt=""
             className="d-inline-block align-middle mr-2"
@@ -95,7 +96,9 @@ const DaveysNav = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
+      </div>
     </Container>
+    
   );
 };
 

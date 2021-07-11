@@ -1,7 +1,10 @@
-import React from "react";
-import { Container } from "reactstrap";
+import React, { useState } from "react";
+import { Container, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import SignUpForm from "./SignUpForm";
 
 const JumbotronAG = () => {
+  const [modal, setModal] = useState(false);
+  const togglePopup = () => setModal(!modal);
   return (
     <div className="jumbotron bg-cover text-white midBg md-0">
       <Container fluid>
@@ -17,13 +20,19 @@ const JumbotronAG = () => {
             <a
               role="button"
               className="btn btn-primary px-5 btn-lg"
-              data-toggle="modal"
-              data-target="#notifyModal"
-            >
-              Sign Up Now <i className="fa fa-hand-pointer"></i>
-            </a>
-          </div>
-        
+              onClick={togglePopup}
+              >
+                {" "}
+                Sign Up Now <i className="fa fa-hand-pointer"></i>
+              </a>
+            </div>
+    
+            <Modal isOpen={modal} toggle={togglePopup}>
+              <ModalHeader toggle={togglePopup}>Sign Up Now</ModalHeader>
+              <ModalBody>
+                <SignUpForm />
+              </ModalBody>
+            </Modal>
       </Container>
       </div>
   );

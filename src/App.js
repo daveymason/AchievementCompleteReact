@@ -9,6 +9,7 @@ import JumbotronHW from './components/structure/JumbotronHW';
 import JumbotronAG from './components/structure/JumbotronAG';
 import Testimonial from './components/structure/Testimonial/Testimonial';
 import Form from './components/structure/Form';
+import Footer from './components/structure/Footer/Footer';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <JumbotronAG />
         <Testimonial />
         <Form />
+        <Footer />
       </header>
     </div>
   );

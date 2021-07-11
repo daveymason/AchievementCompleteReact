@@ -8,18 +8,14 @@ const minLength = (len) => (val) => val && val.length >= len;
 const validEmail = (val) =>
   /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
-class CForm extends Component {
+class SignUpForm extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       name: "",
-      lastName: "",
-      phoneNum: "",
       email: "",
       agree: false,
-      contactType: "By Phone",
-      message: "",
       touched: {
         name: false,
 
@@ -54,11 +50,11 @@ class CForm extends Component {
 
   render() {
     return (
-      <div className="container my-3 px-0 ml-sm-5">
+      <div className="container">
         
             <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
               <Row className="form-group">
-                <Col md={10}>
+                <Col>
                   <Control.text
                     model=".name"
                     id="name"
@@ -86,7 +82,7 @@ class CForm extends Component {
               </Row>
 
               <Row className="form-group">
-                <Col md={10}>
+                <Col>
                   <Control.text
                     model=".email"
                     id="email"
@@ -111,19 +107,8 @@ class CForm extends Component {
                 </Col>
               </Row>
 
-              <Row className="form-group">
-                <Col md={10}>
-                  <Control.textarea
-                    model=".message"
-                    id="message"
-                    name="message"
-                    rows="8"
-                    className="form-control"
-                  />
-                </Col>
-              </Row>
-              <Row className="form-group">
-                <Col md={10}>
+              <Row className="form-group text-right ml-auto">
+                <Col>
                   <Button type="submit" color="primary">
                     Send message
                   </Button>
@@ -136,4 +121,4 @@ class CForm extends Component {
   }
 }
 
-export default CForm;
+export default SignUpForm;
