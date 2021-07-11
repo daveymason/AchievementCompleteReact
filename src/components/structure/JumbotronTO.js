@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import { Container, Modal, ModalHeader, ModalBody } from "reactstrap";
 import SignUpForm from "./SignUpForm";
 
 const JumbotronTO = () => {
