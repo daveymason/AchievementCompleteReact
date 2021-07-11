@@ -84,7 +84,6 @@ const DaveysNav = (props) => {
             <NavItem className="nav-item">
               <NavLink
                 className="btn btn-warning px-5 btn-lg"
-                href="download.html"
                 role="button"
                 onClick={togglePopup}
               >{" "}
