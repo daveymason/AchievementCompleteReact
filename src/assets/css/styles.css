@@ -202,6 +202,12 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     background-color: blue; }
+
+  .clientOne {
+    background: url("../img/client1.png");
+    background-attachment: fixed;
+    background-size: cover;
+  }
   
   
   .img-rounded {

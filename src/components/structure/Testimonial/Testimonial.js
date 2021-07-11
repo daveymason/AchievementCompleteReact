@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import './Testimonials.css';
+import './Testimonial.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-
 
 export default class Testimonials extends Component {
   render() {
@@ -15,40 +14,43 @@ export default class Testimonials extends Component {
         autoPlay={true}
         interval={6100}
       >
-        <div>
-          <img src=".././assets/img/client1.png" />
+        <div> 
+        <img src="https://achievementcomplete.com/assets/img/client1.png" alt="" />
           <div className="myCarousel">
-            <h3>Shirley Fultz</h3>
-            <h4>Designer</h4>
+            <h4>Developer</h4>
             <p>
               It's freeing to be able to catch up on customized news and not be
               distracted by a social media element on the same site
             </p>
+            <cite> - Sven Holtz</cite>
           </div>
         </div>
 
         <div>
-          <img src=".././assets/img/client1.png" />
+          <img src="https://achievementcomplete.com/assets/img/client2.png" alt="" />
           <div className="myCarousel">
-            <h3>Daniel Keystone</h3>
-            <h4>Designer</h4>
+            
+            <h4>UX Designer</h4>
             <p>
               The simple and intuitive design makes it easy for me use. I highly
               recommend Fetch to my peers.
             </p>
+            
+            <cite> - Mia Yang</cite>
           </div>
         </div>
 
         <div>
-          <img src=".././assets/img/client1.png" />
+          <img src="https://achievementcomplete.com/assets/img/client3.png" alt="" />
           <div className="myCarousel">
-            <h3>Theo Sorel</h3>
-            <h4>Designer</h4>
+            <h4>Entrepreneur</h4>
             <p>
               I enjoy catching up with Fetch on my laptop, or on my phone when
               I'm on the go!
             </p>
+            <cite> - Abigail Martinez</cite>
           </div>
+          
         </div>
       </Carousel>
     );
