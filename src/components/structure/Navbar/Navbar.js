@@ -8,16 +8,18 @@ import {
   NavItem,
   NavLink,
   Container,
+  Modal, ModalHeader, ModalBody
 } from "reactstrap";
 import './Navbar.css';
 
 const DaveysNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modal, setModal] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  const togglePopup = () => setModal(!modal);
 
-  return (
-    
+  return (  
     <Container fluid>
       <link
         rel="stylesheet"
@@ -81,14 +83,11 @@ const DaveysNav = (props) => {
             </NavItem>
             <NavItem className="nav-item">
               <NavLink
-                className="btn btn-warning ml-lg-5"
+                className="btn btn-warning px-5 btn-lg"
                 href="download.html"
                 role="button"
-                data-toggle="tooltip"
-                data-placement="bottom"
-                data-html="true"
-                title="Android or iPhone"
-              >
+                onClick={togglePopup}
+              >{" "}
                 <i className="fa fa-download fa-lg"> Download</i>
                 
               </NavLink>
@@ -97,6 +96,13 @@ const DaveysNav = (props) => {
         </Collapse>
       </Navbar>
       </div>
+      <Modal isOpen={modal} toggle={togglePopup}>
+          <ModalHeader toggle={togglePopup}>Coming Soon!</ModalHeader>
+          <ModalBody>
+            <p>Sign up now and be notified upon release</p>
+            <SignUpForm />
+          </ModalBody>
+        </Modal>
     </Container>
     
   );
