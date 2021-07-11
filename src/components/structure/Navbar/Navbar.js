@@ -11,6 +11,7 @@ import {
   Modal, ModalHeader, ModalBody
 } from "reactstrap";
 import './Navbar.css';
+import SignUpForm from "../SignUpForm";
 
 const DaveysNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
