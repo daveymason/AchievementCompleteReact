@@ -9,7 +9,7 @@ import {
   NavLink,
   Container,
 } from "reactstrap";
-import './Navbar.css'
+import './Navbar.css';
 
 const DaveysNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);

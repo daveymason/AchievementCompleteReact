@@ -4,7 +4,7 @@ import CForm from "./CForm.js";
 
 const Form = () => {
   return (
-    <div className="contactBg pt-sm-5 pb-sm-4">
+    <div className="contactBg pt-sm-3 pb-sm-4">
       <Container fluid>
         <div className="row text-center">
           <div className="col mb-3">
@@ -35,10 +35,6 @@ const Form = () => {
                 href="tel:123-456-7890"
                 target="_blank"
                 rel="noreferrer"
-                data-toggle="tooltip"
-                data-placement="bottom"
-                data-html="true"
-                title="Click or Tap to Call!"
               >
                 <i className="fa fa-phone display-1"></i>
               </a>
