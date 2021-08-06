@@ -88,7 +88,7 @@ const DaveysNav = (props) => {
                 role="button"
                 onClick={togglePopup}
               >{" "}
-                <i className="fa fa-download fa-lg"> Download</i>
+                <i className="fa fa-download fa-lg"> Demo</i>
                 
               </NavLink>
             </NavItem>
