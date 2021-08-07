@@ -1,11 +1,10 @@
 .navbar .navbar-nav .nav-link {
     color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500; }
+    font-size: 1.2rem; }
   
   .nav-link:hover {
     color: #ffbb00 !important;
-    font-size: 1.3rem !important;
+    font-size: 1.25rem !important;
     transition: all 0.3s ease-in-out !important; }
   
   .navbar {

@@ -4,7 +4,7 @@ import CForm from "./CForm.js";
 
 const Form = () => {
   return (
-    <div class="anchorDiv py-2" id="contact">
+    <div class="anchorDiv pt-2" id="contact">
       <div className="contactBg pt-sm-3 pb-sm-4">
         <Container fluid>
           <div className="row text-center">

@@ -60,31 +60,31 @@ const DaveysNav = (props) => {
           <Nav className="navbar-nav ml-auto">
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#">
-                <i className="fa fa-home fa-lg"> Home</i>
+                <i className="fa fa-home"> Home</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#about">
-                <i className="fa fa-question-circle fa-lg"> About</i>
+                <i className="fa fa-question-circle"> About</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#features">
-                <i className="fa fa-clipboard-list fa-lg"> Features</i>
+                <i className="fa fa-clipboard-list"> Features</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink className="nav-link" href="#contact">
-                <i className="fa fa-envelope fa-lg"> Contact</i>
+                <i className="fa fa-envelope"> Contact</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
               <NavLink
-                className="btn btn-warning px-5 btn-lg"
+                className="btn btn-warning px-3 btn-lg"
                 role="button"
                 onClick={togglePopup}
               >{" "}

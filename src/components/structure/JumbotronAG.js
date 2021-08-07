@@ -6,7 +6,7 @@ const JumbotronAG = () => {
   const [modal, setModal] = useState(false);
   const togglePopup = () => setModal(!modal);
   return (
-    <div className="jumbotron bg-cover text-white midBg md-0">
+    <div className="jumbotron bg-cover text-white lowBg md-0">
       <Container fluid>
         
           <div className="py-5 col-lg-5 col-12 text-right ml-auto mr-5 blackOverlay">

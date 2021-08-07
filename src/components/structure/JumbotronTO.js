@@ -9,7 +9,7 @@ const JumbotronTO = () => {
   return (
     <div className="jumbotron bg-cover text-white midBg md-0">
       <Container fluid>
-        <div className="py-4 ml-sm-2 ml-md-5 blackOverlay col-lg-5 col-12">
+        <div className="py-4 ml-sm-2 ml-md-5 blackOverlay col-lg-6 col-10">
           <h2 className="display-4 font-weight-bold font-weight-bold blueText">
             Get Ready to Take Off{" "}
           </h2>
