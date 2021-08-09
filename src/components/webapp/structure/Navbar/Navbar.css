@@ -1,0 +1,31 @@
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2rem; }
+  
+  .nav-link:hover {
+    color: #ffbb00 !important;
+    font-size: 1.25rem !important;
+    transition: all 0.3s ease-in-out !important; }
+  
+  .navbar {
+    transition: all 0.5s ease-in-out; }
+  
+  .dm-fixed-nav {
+    background-color: #0d0164 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  
+  .navbar-toggler {
+    border: none;
+    color: white !important; }
+  
+  .navbar-toggler-icon {
+    color: white !important; }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    border: none;
+    outline: none; }
+  
+  .nav-link-last {
+    color: #ffbb00 !important;
+    background-color: white; }

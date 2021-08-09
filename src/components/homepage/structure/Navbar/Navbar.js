@@ -11,7 +11,8 @@ import {
   Modal, ModalHeader, ModalBody
 } from "reactstrap";
 import './Navbar.css';
-import SignUpForm from "../../homepage/SignUpForm";
+import { Link } from 'react-router-dom';
+import SignUpForm from "../../SignUpForm";
 
 const DaveysNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,14 +84,14 @@ const DaveysNav = (props) => {
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink
+              <Link 
+                to='/app' 
                 className="btn btn-warning px-3 btn-lg"
                 role="button"
-                onClick={togglePopup}
-              >{" "}
+              >
                 <i className="fa fa-download fa-lg"> Demo</i>
-                
-              </NavLink>
+              </Link>
+              
             </NavItem>
           </Nav>
         </Collapse>

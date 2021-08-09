@@ -1,4 +1,4 @@
-import Navbar from '../structure/Navbar/Navbar';
+import Navbar from './structure/Navbar/Navbar';
 import Introtron from './Introtron';
 import Quotebox from './Quotebox';
 import JumbotronIA from './JumbotronIA';
@@ -8,7 +8,7 @@ import JumbotronHW from './JumbotronHW';
 import JumbotronAG from './JumbotronAG';
 import Testimonial from './Testimonial/Testimonial';
 import Form from './Form';
-import Footer from '../structure/Footer/Footer';
+import Footer from './structure/Footer/Footer';
 
 function Homepage() {
   return (
