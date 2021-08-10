@@ -8,10 +8,10 @@ Global Styles
 =============================================================================================
 */
 footer {
-    background-color: #00d5ff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%2303abe0' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%230580c1' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230856a2' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230a2b83' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%230d0164' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover; }
+  background-color: #0d0164;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.74'%3E%3Cpolygon fill='%23010a83' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23012ba2' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230158c1' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230090e0' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2300d5ff' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
   
   blockquote .lead {
     font-size: 1.5rem !important; }
@@ -78,7 +78,7 @@ footer {
   .blackOverlay {
     background: rgba(0, 0, 0, 0.404);
     background-blend-mode: overlay;
-    border-radius: 2%; }
+    border-radius: 25px; }
   
   .whiteOverlay {
     background: rgba(255, 255, 255, 0.109);
@@ -88,7 +88,7 @@ footer {
     .blueOverlay {
       background: #0d0164;
       background-blend-mode: overlay;
-      border-radius: 2%; }
+      border-radius: 25px; }
   
   /* 
   =============================================================================================
@@ -208,6 +208,15 @@ footer {
     background-attachment: fixed;
     background-size: cover;
   }
+
+  .dashBg{
+    background-image: url('../img/dashBg.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #0d0164;
+    height: 40vh;
+    
+  }
   
   .img-rounded {
     border-radius: 5%; }
@@ -235,4 +244,9 @@ footer {
   .modal-header {
     background-color: #00d5ff; }
   
-  
+  .sidebar{
+    background-color: #0d0164;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.74'%3E%3Cpolygon fill='%23010a83' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23012ba2' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230158c1' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230090e0' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2300d5ff' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+  }

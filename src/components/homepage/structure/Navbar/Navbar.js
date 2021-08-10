@@ -39,7 +39,7 @@ const DaveysNav = (props) => {
       <div class="blackOverlay">
       <Navbar
         id="dm-sticky-nav"
-        className="navbar navbar-dark navbar-expand-lg fixed-top dm-transparent-nav blueOverlay"
+        className="navbar navbar-dark navbar-expand-lg fixed-top dm-transparent-nav"
       >
         <NavbarBrand>
           <img

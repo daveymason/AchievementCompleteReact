@@ -3,20 +3,22 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   Container
 } from "reactstrap";
-import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+
+
 
 const DaveysNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [modal, setModal] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
-  const togglePopup = () => setModal(!modal);
+
+  const style = { 
+    paddingTop: 75,
+    borderRadius:0,
+  }
 
   return (  
     <Container fluid>
@@ -33,54 +35,50 @@ const DaveysNav = (props) => {
       />
 
       <link rel="icon" href="/favicon.ico" />
-      <div class="blackOverlay">
+      <div>
       <Navbar
-        id="dm-sticky-nav"
-        className="navbar navbar-dark navbar-expand-lg fixed-top"
+        className="navbar navbar-dark navbar-expand-lg"
+        style={style}
       >
-        <NavbarBrand>
-          <img
-            src="https://daveymason.com/assets/external/images/logo.png"
-            width="70"
-            alt=""
-            className="d-inline-block align-middle mr-2"
-          />
-          <span className="text-uppercase font-weight-bold">A.C.</span>
-        </NavbarBrand>
+        
         <NavbarToggler onClick={toggle}>
           <span className="navbar-toggler-icon"></span>
         </NavbarToggler>
         <Collapse
           isOpen={isOpen}
-          className="collapse navbar-collapse text-right"
-          id="dm-stickynav"
+          className="collapse navbar-collapse text-left"
         >
-          <Nav className="navbar-nav ml-auto">
+          <Nav vertical className="navbar-nav mr-auto">
+          
+            <hr />
             <NavItem className="nav-item">
-              <NavLink className="nav-link" href="#">
-                <i className="fa fa-home"> Home</i>
+              <NavLink className="nav-link" to="/app">
+                <i className="fa fa-compass"> Dashboard</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" href="#about">
-                <i className="fa fa-question-circle"> About</i>
+              <NavLink className="nav-link" to="/goals">
+                <i className="fa fa-bullseye"> Goals</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" href="#features">
-                <i className="fa fa-clipboard-list"> Features</i>
-                
+              <NavLink className="nav-link" to="/productivity">
+                <i className="fa fa-check-circle"> Productivity</i>
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" href="#contact">
-                <i className="fa fa-envelope"> Contact</i>
-                
+              <NavLink className="nav-link" to="/motivation">
+                <i className="fa fa-spinner"> Motivation</i>
               </NavLink>
             </NavItem>
-           
+            <NavItem className="nav-item">
+              <NavLink className="nav-link" to="/community">
+                <i className="fa fa-user-friends"> Community</i>
+              </NavLink>
+            </NavItem>
+            
           </Nav>
         </Collapse>
       </Navbar>

@@ -8,10 +8,14 @@
     transition: all 0.3s ease-in-out !important; }
   
   .navbar {
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out; 
+    background-color: #0d0164;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.74'%3E%3Cpolygon fill='%23010a83' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23012ba2' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%230158c1' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%230090e0' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2300d5ff' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;}
   
   .dm-fixed-nav {
-    background-color: #0d0164 !important;
+    /* background-color: #0d0164 !important; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
   
   .navbar-toggler {
