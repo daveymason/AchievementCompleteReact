@@ -215,6 +215,7 @@ footer {
     background-size: cover; 
     background-color: #0d0164;
     height: 50vh;
+    z-index: -1;
   }
 
   .motiBg{
@@ -223,6 +224,7 @@ footer {
     background-size: cover; 
     background-color: #0d0164;
     height: 50vh;
+    z-index: -1;
   }
 
   .goalBg{
@@ -231,6 +233,7 @@ footer {
     background-size: cover; 
     background-color: #0d0164;
     height: 50vh;
+    z-index: -1;
   }
 
   .commBg{
@@ -239,6 +242,7 @@ footer {
     background-size: cover; 
     background-color: #0d0164;
     height: 50vh;
+    z-index: -1;
   }
 
   .prodBg{
@@ -247,6 +251,7 @@ footer {
     background-size: cover; 
     background-color: #0d0164;
     height: 50vh;
+    z-index: -1;
   }
   
   .img-rounded {
