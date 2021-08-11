@@ -21,9 +21,62 @@ function Homepage() {
           <Col style={style}>
             <Navbar />
             <Introtron />
-            <h2>Goals</h2>
-            <RenderCard />
-            
+            <Container>
+              <h1>Goals</h1>
+              <Card className="shadow my-5">
+                <CardBody className="card-body">
+                  <blockquote className="blockquote mb-0 text-center">
+                    <p className="lead">
+                      <em>
+                      <CardText>Check out your goals</CardText>
+                      </em>
+                    </p>
+                  </blockquote>
+                </CardBody>
+              </Card>
+          </Container>
+          <Container>
+              <h1>Get it done!</h1>
+              <Card className="shadow my-5">
+                <CardBody className="card-body">
+                  <blockquote className="blockquote mb-0 text-center">
+                    <p className="lead">
+                      <em>
+                      <CardText>Productivity tips and tools</CardText>
+                      </em>
+                    </p>
+                  </blockquote>
+                </CardBody>
+              </Card>
+          </Container>
+          <Container>
+              <h1>Keep it up!</h1>
+              <Card className="shadow my-5">
+                <CardBody className="card-body">
+                  <blockquote className="blockquote mb-0 text-center">
+                    <p className="lead">
+                      <em>
+                      <CardText>Stay motivated with words from the wise</CardText>
+                      </em>
+                    </p>
+                  </blockquote>
+                </CardBody>
+              </Card>
+          </Container>
+          <Container>
+              <h1>Shout it out!</h1>
+              <Card className="shadow my-5">
+                <CardBody className="card-body">
+                  <blockquote className="blockquote mb-0 text-center">
+                    <p className="lead">
+                      <em>
+                      <CardText>Build a solid community and share your goals</CardText>
+                      </em>
+                    </p>
+                  </blockquote>
+                </CardBody>
+              </Card>
+          </Container>
           </Col>
         </Row>
         <Footer />

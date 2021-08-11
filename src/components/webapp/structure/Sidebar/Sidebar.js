@@ -69,7 +69,7 @@ const DaveysNav = (props) => {
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" to="/motivation">
+              <NavLink className="nav-link" to="/app/motivation">
                 <i className="fa fa-spinner"> Motivation</i>
               </NavLink>
             </NavItem>
