@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import QuoteContainer from './QuoteContainer';
 
-const App = () => {
+const Motivation = () => {
   const [quotes, setQuotes] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Motivation;

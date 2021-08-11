@@ -2,7 +2,7 @@ import Introtron from "./Introtron";
 import Navbar from "../structure/Navbar/Navbar";
 import Sidebar from "../structure/Sidebar/Sidebar";
 import Footer from "../structure/Footer/Footer";
-import { Container, Row, Col, Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import { Container, Row, Col, Card, CardText, CardBody, CardTitle } from "reactstrap";
 
 function Homepage() {
   const style = {
