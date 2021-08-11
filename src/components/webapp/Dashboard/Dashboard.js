@@ -1,5 +1,4 @@
 import Introtron from "./Introtron";
-import Quotebox from "./Quotebox";
 import Navbar from "../structure/Navbar/Navbar";
 import Sidebar from "../structure/Sidebar/Sidebar";
 import Footer from "../structure/Footer/Footer";

@@ -10,7 +10,7 @@ const App = () => {
   }, []);
 
   function fetchData() {
-    axios.get('https://achievementcomplete.com/shared/quotes.js').then(response => {
+    axios.get('https://achievementcomplete.com/quotes.js').then(response => {
       setQuotes(response.data);
     })
   }
