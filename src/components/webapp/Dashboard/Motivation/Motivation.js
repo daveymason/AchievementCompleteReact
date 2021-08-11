@@ -17,7 +17,6 @@ const Motivation = () => {
   function fetchData() {
     axios.get('https://achievementcomplete.com/quotes.js').then(response => {
       setQuotes(response.data);
-      console.log(setQuotes());
     })
   }
 
