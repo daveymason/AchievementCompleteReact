@@ -1,4 +1,4 @@
-export const QUOTES = [
+export const quotes = [
 	{ 
 		"quote" : "In spite of everything I shall rise again: I will take up my pencil, which I have forsaken in my great discouragement, and I will go on with my drawing", 
 		"author" : "Vincent van Gogh" 
