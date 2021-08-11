@@ -3,13 +3,13 @@ import Quotebox from "./Quotebox";
 import Navbar from "../structure/Navbar/Navbar";
 import Sidebar from "../structure/Sidebar/Sidebar";
 import Footer from "../structure/Footer/Footer";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
 function Homepage() {
-  const style = { 
+  const style = {
     padding: 0,
-    borderRadius:0,
-  }
+    borderRadius: 0,
+  };
 
   return (
     <div className="App">
@@ -21,12 +21,33 @@ function Homepage() {
           <Col style={style}>
             <Navbar />
             <Introtron />
-            <Quotebox />
+            <h2>Goals</h2>
+            <RenderCard />
+            
           </Col>
         </Row>
         <Footer />
       </Container>
     </div>
+  );
+}
+
+function RenderCard() {
+  return (
+    <Container>
+        <Card className="shadow my-5">
+        <CardTitle>Learn HTML</CardTitle>
+          <CardBody className="card-body">
+            <blockquote className="blockquote mb-0 text-center">
+              <p className="lead">
+                <em>
+                <CardText>The first goal to becoming a web developer.</CardText>
+                </em>
+              </p>
+            </blockquote>
+          </CardBody>
+        </Card>
+    </Container>
   );
 }
 
