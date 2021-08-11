@@ -215,7 +215,38 @@ footer {
     background-size: cover; 
     background-color: #0d0164;
     height: 50vh;
-    
+  }
+
+  .motiBg{
+    background-image: url('../img/motiBg.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #0d0164;
+    height: 50vh;
+  }
+
+  .goalBg{
+    background-image: url('../img/goalBg.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #0d0164;
+    height: 50vh;
+  }
+
+  .commBg{
+    background-image: url('../img/commBg.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #0d0164;
+    height: 50vh;
+  }
+
+  .prodBg{
+    background-image: url('../img/prodBg.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: #0d0164;
+    height: 50vh;
   }
   
   .img-rounded {

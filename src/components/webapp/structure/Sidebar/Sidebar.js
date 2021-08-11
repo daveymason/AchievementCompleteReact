@@ -58,13 +58,13 @@ const DaveysNav = (props) => {
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" to="/goals">
+              <NavLink className="nav-link" to="/app/goals">
                 <i className="fa fa-bullseye"> Goals</i>
                 
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" to="/productivity">
+              <NavLink className="nav-link" to="/app/productivity">
                 <i className="fa fa-check-circle"> Productivity</i>
               </NavLink>
             </NavItem>
@@ -74,7 +74,7 @@ const DaveysNav = (props) => {
               </NavLink>
             </NavItem>
             <NavItem className="nav-item">
-              <NavLink className="nav-link" to="/community">
+              <NavLink className="nav-link" to="/app/community">
                 <i className="fa fa-user-friends"> Community</i>
               </NavLink>
             </NavItem>

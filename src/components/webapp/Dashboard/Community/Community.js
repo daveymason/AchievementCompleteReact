@@ -1,25 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import Navbar from "../../structure/Navbar/Navbar";
 import Sidebar from "../../structure/Sidebar/Sidebar";
 import Footer from "../../structure/Footer/Footer";
-import QuoteContainer from './QuoteContainer';
 import Introtron from './Introtron';
-import { Container, Row, Col, Card, CardText, CardBody, CardTitle } from "reactstrap";
+import { Container, Row, Col, Card } from "reactstrap";
 
-const Motivation = () => {
-  const [quotes, setQuotes] = useState([]);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  function fetchData() {
-    axios.get('https://achievementcomplete.com/quotes.js').then(response => {
-      setQuotes(response.data);
-    })
-  }
-
+const Community = () => {
+  
   const style = {
     padding: 0,
     borderRadius: 0,
@@ -48,4 +35,4 @@ const Motivation = () => {
   );
 }
 
-export default Motivation;
+export default Community;
