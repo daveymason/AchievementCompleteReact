@@ -3,7 +3,7 @@ import Navbar from "../../structure/Navbar/Navbar";
 import Sidebar from "../../structure/Sidebar/Sidebar";
 import Footer from "../../structure/Footer/Footer";
 import Introtron from './Introtron';
-import { Container, Row, Col, Card } from "reactstrap";
+import { Container, Row, Col, Card, } from "reactstrap";
 
 const Productivity = () => {
   
@@ -24,6 +24,7 @@ const Productivity = () => {
           <Col style={style}>
             <Navbar />
             <Introtron />
+            <h2>Top learning communities</h2>
             <Card>
             </Card>
           </Col>

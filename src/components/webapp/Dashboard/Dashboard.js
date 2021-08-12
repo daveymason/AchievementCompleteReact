@@ -3,6 +3,25 @@ import Navbar from "../structure/Navbar/Navbar";
 import Sidebar from "../structure/Sidebar/Sidebar";
 import Footer from "../structure/Footer/Footer";
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle } from "reactstrap";
+import { Provider } from 'react-redux';
+import { ConfigureStore } from '../../../redux/configureStore';
+
+const store = ConfigureStore();
+
+const mapStateToProps = state => {
+  return {
+      communities: state.communities
+  };
+};
+
+const Communities = () => {
+  return (
+      <Communities
+          communities={this.communities.filter(partner => partner.id)[0]}
+      />
+  );
+};
+
 
 function Homepage() {
   const style = {
@@ -11,6 +30,7 @@ function Homepage() {
   };
 
   return (
+    <Provider store={store}>
     <div className="App">
       <Container fluid style={style}>
         <Row>
@@ -27,7 +47,7 @@ function Homepage() {
                   <blockquote className="blockquote mb-0 text-center">
                     <p className="lead">
                       <em>
-                      <CardText>Check out your goals</CardText>
+                      <Communities />
                       </em>
                     </p>
                   </blockquote>
@@ -81,6 +101,7 @@ function Homepage() {
         <Footer />
       </Container>
     </div>
+    </Provider>
   );
 }
 
