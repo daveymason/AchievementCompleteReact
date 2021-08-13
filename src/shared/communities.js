@@ -15,3 +15,4 @@ export const COMMUNITIES = [
     }
 ];
 
+export default COMMUNITIES;

@@ -2,6 +2,7 @@ import Introtron from "./Introtron";
 import Navbar from "../structure/Navbar/Navbar";
 import Sidebar from "../structure/Sidebar/Sidebar";
 import Footer from "../structure/Footer/Footer";
+import Communities from "../../../shared/communities"
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle } from "reactstrap";
 import { Provider } from 'react-redux';
 import { ConfigureStore } from '../../../redux/configureStore';
@@ -14,16 +15,16 @@ const mapStateToProps = state => {
   };
 };
 
-const Communities = () => {
+const CommunitySort = () => {
   return (
       <Communities
-          communities={this.communities.filter(partner => partner.id)[0]}
+          communities={this.communities.filter(commList => this.communities.id)[0]}
       />
   );
 };
 
 
-function Homepage() {
+function Dashboard() {
   const style = {
     padding: 0,
     borderRadius: 0,
@@ -44,13 +45,11 @@ function Homepage() {
               <h1>Goals</h1>
               <Card className="shadow my-5">
                 <CardBody className="card-body">
-                  <blockquote className="blockquote mb-0 text-center">
-                    <p className="lead">
-                      <em>
-                      <Communities />
-                      </em>
-                    </p>
-                  </blockquote>
+                  
+                    
+                      <CommunitySort />
+                      
+                  
                 </CardBody>
               </Card>
           </Container>
@@ -124,4 +123,4 @@ function RenderCard() {
   );
 }
 
-export default Homepage;
+export default Dashboard;
