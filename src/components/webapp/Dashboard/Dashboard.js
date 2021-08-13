@@ -4,10 +4,8 @@ import Sidebar from "../structure/Sidebar/Sidebar";
 import Footer from "../structure/Footer/Footer";
 import Communities from "../../../shared/communities"
 import { Container, Row, Col, Card, CardText, CardBody, CardTitle } from "reactstrap";
-import { Provider } from 'react-redux';
-import { ConfigureStore } from '../../../redux/configureStore';
-
-const store = ConfigureStore();
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
   return {
@@ -23,7 +21,6 @@ const CommunitySort = () => {
   );
 };
 
-
 function Dashboard() {
   const style = {
     padding: 0,
@@ -31,7 +28,7 @@ function Dashboard() {
   };
 
   return (
-    <Provider store={store}>
+    
     <div className="App">
       <Container fluid style={style}>
         <Row>
@@ -100,7 +97,7 @@ function Dashboard() {
         <Footer />
       </Container>
     </div>
-    </Provider>
+    
   );
 }
 
@@ -123,4 +120,4 @@ function RenderCard() {
   );
 }
 
-export default Dashboard;
+export default withRouter(connect(mapStateToProps)(Dashboard));
